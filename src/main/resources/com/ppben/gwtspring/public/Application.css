@@ -1,0 +1,61 @@
+/** Add css rules here for your application. */
+div{
+	display: block;
+}
+h1, h2, h3{
+	margin: .2em 0.2em .2em 0;
+	padding: 0;
+	font-weight: normal;
+}
+h1{
+	text-shadow: 2px 2px 3px #ccc;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+a:visited{
+	color: #900B09;
+}
+button {
+  display: block;
+  font-size: 16pt
+}
+label{
+	text-align: left;
+	font-weight: bold;
+	
+}
+
+.word_wrap_break_word{
+	 word-wrap:break-word;
+}
+.widePanel {
+  width: 100%
+}
+
+img {
+  margin-top: 20px;
+}
+
+
+.wrapper{
+	width: 960px;
+	padding: 0px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+h1.logo a{
+	float: left;
+	border: 0px;
+	 background: url(images/final-logo.png) no-repeat right; 
+	width: 587px;
+	overflow: visible;
+	text-indent: -9999px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	left: 0px;
+	z-index: 10;
+}
+

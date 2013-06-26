@@ -1,0 +1,231 @@
+@theme: #555;
+@backgroundColor: #EEEEEE;
+@backgoundHearder:#30ab75 ;
+@backgoundTopmenu:#dbaa02 ;
+@fontNormal: Helvetica, Arial, Sans-Serif;
+@fontSize: 120%;
+@menuselectedItemColor: white;
+@leftcolWidth:170px;
+@rightcolWidth:170px;
+@borderContentCenter:1px solid #d6d6d6;
+
+.centerAlignment{
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#contain{
+	background: @backgroundColor;
+	margin-top: 0;
+	.centerAlignment;
+	margin-bottom: 0;
+	padding:0;
+	font-size:@fontSize;
+	color: black;
+	font-family: @fontNormal;
+	display: block;
+	width: 100%;
+}
+#header {
+	background: @backgoundHearder !important;
+	height: 120px !important;
+	line-height: 100px;
+	width: 100%;
+	clear: both;
+}
+#topmenu {
+	background-color:@backgoundTopmenu !important;
+	margin: 0;
+	.centerAlignment;
+	padding: 0;
+	clear: both;
+	height: 35px;
+	position: relative;
+	width: 100%;
+	.left{
+		a{
+			&:hover{
+				color: @menuselectedItemColor;
+			}
+		}
+	}
+	.right{
+		float: right;
+		word-spacing: 6px;
+		font-size: @fontSize;
+		padding-right: 0px;
+		padding-top: 7px;
+		color: @menuselectedItemColor;
+		white-space: nowrap;
+		text-align: right;
+		margin: 0;
+		padding-bottom: 0;
+		padding-left: 0px;
+	}
+	a{
+		&:visited{
+			text-decoration: none;
+			color: @menuselectedItemColor !important;
+			background-color: transparent;
+			font-weight: bold;
+		}
+		
+	}
+}
+
+
+
+.gwt-MenuBar-horizontal{
+	background: #dbaa02 !important;
+	border: none !important;
+	margin-top: 5px;
+}
+.gwt-MenuBar-horizontal .gwt-MenuItem{
+	padding-left: 0px;
+	font-family: @fontNormal;
+}
+
+#leftMenu .gwt-MenuBar .gwt-MenuItem-selected{
+	background: @backgoundHearder !important;
+	color: @menuselectedItemColor !important;
+
+}
+.gwt-MenuBar-vertical {
+	background: @backgroundColor !important;
+	margin-top: 20px;
+	margin-left: 2px;
+	font-size: @fontSize;
+	
+}
+.gwt-MenuBar-vertical .gwt-MenuItem{
+	padding: 4px 14px 4px 5px !important;
+	width: 150px !important;
+	border-bottom: thin;
+}
+.gwt-MenuBar .gwt-MenuItem-selected{
+	background: none!important;
+	color: @menuselectedItemColor !important;
+
+}
+/* ----------- Content center --------------- */
+
+#leftcol, #middlecol, #rightcol {
+	
+	min-height: 1250px !important;
+	padding: 0px;
+	margin-top: 5px;
+	height: 100%;
+}
+#leftcol, #rightcol{
+	 background: transparent; 
+	font-size: @fontSize;
+	float: left;
+	width: @leftcolWidth;
+	border-top: 1px solid #d6d6d6;
+	
+
+}
+#leftcol {
+border: 0px solid #d6d6d6;
+margin-left: 10px;
+}
+#rightcol {
+padding: 2px;
+text-align: center;
+border: 0px solid #d6d6d6;
+}
+#middlecol {
+width: 575px;
+border: @borderContentCenter;
+background: #fff;
+margin-top: 5px;
+margin-bottom: 5px;
+.centerAlignment;
+}
+.searchPanel, .editBookPanel{
+	margin:0 auto;
+	margin-top: 10px;
+	
+}
+.searchPanel input{
+	-webkit-border-radius: 13px;
+	border-radius:13px;
+}
+
+.searchResultPanel{
+	margin:0 auto;
+	width:100%;
+}
+.hearderOfResultPanel{
+	font-weight:  bolder;
+	
+}
+.resultTable{
+	table-layout: fixed;
+	text-align: left;
+	
+}
+.tdDescription{
+	word-wrap:break-word;
+}
+/* --------------- */
+/* ----- Edit Book Panel ------- */
+.editBookPanel input, .editBookPanel textarea{
+	width:450px;
+}
+.editBookPanel .gwt-Label{
+	text-align: left;
+	font-weight: bold;
+}
+.editBookPanel select{
+	width:100px;
+}
+.editBookPanel .labelResult{
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+/* --------- Customer form input ------- */
+
+td.add-customer-label,.add-customer-label {
+  text-align: left;
+  padding-left:10px;
+}
+
+.add-customer-input {
+  border: 1px solid red;
+  border-collapse: collapse;
+  margin-right: 0px;
+  margin-left: auto;
+}
+.add-customer-input-buttons{
+	margin-left:10px;
+	.resultMessage{
+		margin-left: 10px;
+		margin-top: 5px;
+		font-weight: bold;
+	}
+	
+}
+
+.gwt-DecoratorPanel .middleCenter {
+
+   height: 100%;
+   width: 100%;
+ }
+ /* ------ customer list ----------- */
+ .customerListButtonsPanel{
+ 	margin-top:5px;
+ 	margin-bottom: 5px;
+ 	
+ }
+ .customerListRowHeader{
+ 	margin-top: 5px;
+ 	margin-bottom: 5px;
+ 	
+ 	td{
+ 		font-weight:bold;
+ 		border-bottom: 1px solid #E2E2E2;
+ 	}
+ }
+ 
